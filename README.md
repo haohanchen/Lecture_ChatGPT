@@ -89,21 +89,23 @@ A systematic evalation of GPT’s performance in political text annotation
 
     -   Intercoder agreement
 
--   Varieties of tasks
+-   Various tasks
 
-    -   Complexity
+    -   Vary in terms of complexity
 
-    -   Novelty (being part of GTP’s training data or not)
+    -   Vary in terms of novelty (being part of GTP’s training data or
+        not)
 
 ## Gilardi et al. (2023)
 
-![](images/Screenshot%202023-12-14%20at%2021.17.39.png)
+<img src="images/Screenshot%202023-12-14%20at%2021.17.39.png"
+width="539" />
 
 ## Why I recommend this piece of work
 
 -   Clearly defined metrics
 
--   Best replication materials (among all I have reviewed)  
+-   My favorite replication materials  
     <https://doi.org/10.7910/DVN/PQYF6M>  
 
 ## Other Selected Works Using GPT for Political Science Research
@@ -822,7 +824,8 @@ A recent advisee’s project on the Israel-Palestine conflict
 
 ## Case (con’d)
 
-Words that distinguishes the content-moderated tweets? (Odds Ratio)
+What words distinguishes content-moderated tweets from the others? (Odds
+Ratio)
 
 <img src="images/Screenshot%202023-12-16%20at%2000.00.45.png"
 width="330" />
@@ -848,18 +851,12 @@ studies about discourse related to **wars, conflicts, and violence**!
         set
     -   If satisfactory, go to Step 4
     -   If not satisfactory:
-        -   Investigate cases with disagreement
+        -   Examine cases where human coders disagree with the machine
         -   Modify instructions
         -   Check the “training” set
-        -   Go to Step 2
+        -   Go back to **Step 2**
 -   **Step 4**: Apply ChatGPT to annotate documents outside the
     “training” set.
-
-## Be careful
-
--   Error handling
-
--   Content moderation
 
 ## Other General Tips
 
@@ -870,6 +867,14 @@ studies about discourse related to **wars, conflicts, and violence**!
 
 -   Be open to being persuaded by the machine. Ask the machine to
     explain reasons if you are stuck.
+
+## Frequently occurred technical errors
+
+-   Rate limit
+
+-   Empty strings (usually after text pre-processing)
+
+-   Content moderation
 
 ## Generalizability of the Skills Learned about ChatGPT
 
