@@ -1,0 +1,26 @@
+In this task, you will be annotating a sample of Tweets collected from Twitter to determine their relevance to "content moderation."
+
+Content moderation refers to the practice of screening and monitoring user-generated content on social media sites to ensure compliance with specific rules and guidelines. Content that is illegal, hateful, or inappropriate is either removed, flagged, or labeled as "disputed" during this review process.
+
+It can be challenging to decide what content should be allowed on social media, as opinions may vary, especially regarding topics like vaccine safety or politics.
+
+For each tweet in the sample, follow these instructions:
+
+1. Carefully read the text of the tweet, paying close attention to details.
+2. Classify the tweet as either relevant (1) or irrelevant (0).
+
+Code a tweet as 1 if it directly relates to content moderation, including discussions on:
+
+- Social media platforms' content moderation rules and practices.
+- Governments' regulation of online content moderation.
+- Mild forms of content moderation, such as flagging.
+- *Importantly* reporting tweets or accounts, deleting tweets, and suspending accounts
+
+Code a tweet as 0 if:
+
+- It does not refer to content moderation as defined above.
+- It is an example of moderated content, such as a flagged tweet or one containing sensitive content.
+
+Examples of irrelevant tweets include those labeled as "disputed" by Twitter, those claiming something is false, or those containing sensitive content. While these tweets may be subject to content moderation, they do not discuss the topic itself.
+
+Simply label each tweet as 1 or 0 without any explanation.
