@@ -22,10 +22,10 @@ What you probably have tried…
 
 -   Inspiring research ideas
 
-**Today: Document annotation**
+**Today: Using ChatGPT to annotate political documents at scale**
 
-**How to extract information you need from documents about using
-ChatGPT?**
+How to extract information you need from a large number of political
+documents using ChatGPT?
 
 ## Document Annotation
 
@@ -468,7 +468,7 @@ for (i in 1:5){ # Only loop through 5 for demo purpose
   to_annotate_gptLabel <- content(response)$choices[[1]]$message$content
   
   write_rds(response, str_c("data/output_gpt3.5/", to_annotate_id, ".rds")) 
-  Sys.sleep(0.5) # Sleep for 0.5 seconds after finishing each doc.
+  Sys.sleep(1) # Sleep for 1 seconds after finishing each doc.
   message(i, " of ", nrow(d_train))
   # Optional below: Print results to get a "live update"
   message("status_id: ", to_annotate_id, "\n", "text: ", to_annotate_text)
@@ -704,7 +704,7 @@ for (i in 1:5){ # Just do first 5 for demo purpose
   to_annotate_gptLabel <- content(response)$choices[[1]]$message$content
   
   write_rds(response, str_c("data/output_gpt4/", to_annotate_id, ".rds")) 
-  Sys.sleep(0.5) # Sleep for 0.5 seconds after finishing each doc.
+  Sys.sleep(1) # Sleep for 1 seconds after finishing each doc.
   message(i, " of ", nrow(d_train))
   # Optional below: Print results to get a "live update"
   message("status_id: ", to_annotate_id, "\n", "text: ", to_annotate_text)
@@ -814,7 +814,7 @@ Source: <https://go.microsoft.com/fwlink/?linkid=2198766>
 
 ## Case
 
-A recent advisee’s project on the Israel-Palestine conflict
+A recent student’s project on the Israel-Palestine conflict
 
 -   Used ChatGPT to label tweets containing keywords related to the
     recent Israel-Palestine conflict
@@ -858,6 +858,14 @@ studies about discourse related to **wars, conflicts, and violence**!
 -   **Step 4**: Apply ChatGPT to annotate documents outside the
     “training” set.
 
+## Frequently occurred technical errors
+
+-   Rate limit
+
+-   Empty strings (usually after text pre-processing)
+
+-   Content moderation
+
 ## Other General Tips
 
 -   Usually, the most difficult part is figuring out what <u>**YOU**</u>
@@ -867,14 +875,6 @@ studies about discourse related to **wars, conflicts, and violence**!
 
 -   Be open to being persuaded by the machine. Ask the machine to
     explain reasons if you are stuck.
-
-## Frequently occurred technical errors
-
--   Rate limit
-
--   Empty strings (usually after text pre-processing)
-
--   Content moderation
 
 ## Generalizability of the Skills Learned about ChatGPT
 
